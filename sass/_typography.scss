@@ -1,0 +1,31 @@
+body {
+  font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.875rem;
+}
+
+h1 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+.error {
+  color: $color-secondary;
+
+  &-password {
+    color: $color-primary;
+
+    &:before {
+      content: "●";
+      color: $color-secondary;
+      margin-right: .25rem;
+    }
+  }
+}
+
+.submit {
+  color: #fff;
+}

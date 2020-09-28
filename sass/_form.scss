@@ -1,0 +1,49 @@
+
+h1,
+h2 {
+  align-self: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+select {
+  appearance: none;
+  height: 2.5rem;
+  padding: .25rem;
+  background: #fff;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input {
+  padding: .25rem;
+  height: 1.5rem;
+  margin-bottom: .25rem;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+label {
+  margin-top: 1rem;
+  margin-bottom: .25rem;
+}
+
+.submit {
+  align-self: center;
+  padding: .5rem 1rem;
+  height: auto;
+  background: $color-primary;
+  border: none;
+}
+
+#error-password {
+  display: flex;
+  flex-direction: column;
+}

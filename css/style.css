@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -74,6 +75,11 @@ body {
   background-color: rgba(255, 216, 180, 0.75);
 }
 
+h1,
+h2 {
+  align-self: center;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -104,6 +110,83 @@ label {
 .submit {
   align-self: center;
   margin-top: 1rem;
+}
+
+body {
+  font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.875rem;
+}
+
+h1 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+.error {
+  color: #683333;
+}
+.error-password {
+  color: #344735;
+}
+.error-password:before {
+  content: "●";
+  color: #683333;
+  margin-right: 0.25rem;
+}
+
+.submit {
+  color: #fff;
+}
+
+h1,
+h2 {
+  align-self: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+select {
+  appearance: none;
+  height: 2.5rem;
+  padding: 0.25rem;
+  background: #fff;
+}
+select:focus {
+  outline: none;
+}
+
+input {
+  padding: 0.25rem;
+  height: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+input:focus {
+  outline: none;
+}
+
+label {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.submit {
+  align-self: center;
+  padding: 0.5rem 1rem;
+  height: auto;
+  background: #344735;
+  border: none;
+}
+
+#error-password {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

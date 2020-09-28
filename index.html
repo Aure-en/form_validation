@@ -7,6 +7,7 @@
   <meta charset='utf-8'>
   <link rel='stylesheet' href='css/style.css'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
   <script defer src='script.js'></script>
 </head>
 
@@ -288,7 +289,13 @@
       <label for="password">Password</label>
       <input type="password" id="password" name="password" pattern="(?=.{8,})(?=\d)(?=[a-z])(?=[A-Z])(?=\[a-zA-Z0-9])" required>
       <!-- Password must contain at least 8 letters, 1 number, 1 lowercase letter, 1 uppercase letter, 1 special character -->
-      <small class="error" id="error-password"></small>
+      <div id="error-password">
+      <small class="error error-password" id="password-lowercase">One lowercase character</small>
+      <small class="error error-password" id="password-uppercase">One uppercase character</small>
+      <small class="error error-password" id="password-number">One number</small>
+      <small class="error error-password" id="password-special">One special character</small>
+      <small class="error error-password" id="password-length">8 characters minimum</small>
+      </div>
 
       <label for="confirm-password">Confirm your password</label>
       <input type="password" id="confirm-password" name="confirm-password" required>

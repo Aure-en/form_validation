@@ -15,23 +15,23 @@
 
   <div class="wrapper">
 
-    <form>
+    <form novalidate>
 
       <h1>Sign this petition to plant more trees!</h1>
       <h2>We always need more trees.</h2>
 
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required>
-      <small class="error" id="error-name"></small>
+      <small class="error" id="error-name" aria-live="polite"></small>
 
       <label for="email">Email</label>
       <input type="email" id="email" name="email" required>
-      <small class="error" id="error-email"></small>
+      <small class="error" id="error-email" aria-live="polite"></small>
 
       <label for="zip">Zip Code</label>
       <input type="text" id="zip" name="zip" pattern="[a-zA-Z0-9]+" required>
       <!-- Zip Code can only contain letters / numbers -->
-      <small class="error" id="error-zip"></small>
+      <small class="error" id="error-zip" aria-live="polite"></small>
 
       <label for="country">Country</label>
       <select name="country" id="country">
@@ -287,23 +287,22 @@
       </select>
 
       <label for="password">Password</label>
-      <input type="password" id="password" name="password" pattern="(?=.{8,})(?=\d)(?=[a-z])(?=[A-Z])(?=\[a-zA-Z0-9])" required>
+      <input type="password" id="password" name="password" pattern="(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])" required>
       <!-- Password must contain at least 8 letters, 1 number, 1 lowercase letter, 1 uppercase letter, 1 special character -->
       <div id="error-password">
-      <small class="error error-password" id="password-lowercase">One lowercase character</small>
-      <small class="error error-password" id="password-uppercase">One uppercase character</small>
-      <small class="error error-password" id="password-number">One number</small>
-      <small class="error error-password" id="password-special">One special character</small>
-      <small class="error error-password" id="password-length">8 characters minimum</small>
+      <small class="error error-password" id="password-lowercase" aria-live="polite">One lowercase character</small>
+      <small class="error error-password" id="password-uppercase" aria-live="polite">One uppercase character</small>
+      <small class="error error-password" id="password-number" aria-live="polite">One number</small>
+      <small class="error error-password" id="password-special" aria-live="polite">One special character</small>
+      <small class="error error-password" id="password-length" aria-live="polite">8 characters minimum</small>
       </div>
 
       <label for="confirm-password">Confirm your password</label>
       <input type="password" id="confirm-password" name="confirm-password" required>
-      <small class="error" id="error-confirm"></small>
+      <small class="error" id="error-confirm" aria-live="polite"></small>
 
-      <small class="error" id="error-submit"></small>
       <input class="submit" type="submit" value="Plant a tree">
-
+      <small class="error" id="error-submit" aria-live="polite"></small>
     </form>
 
   </div>

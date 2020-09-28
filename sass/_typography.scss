@@ -23,6 +23,14 @@ small {
       color: $color-secondary;
       margin-right: .25rem;
     }
+
+    &.valid {
+      color: rgba($color-primary, .7);
+
+      &:before {
+        color: rgba($color-secondary, .7);
+      }
+    }
   }
 }
 

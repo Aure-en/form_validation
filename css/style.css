@@ -75,43 +75,6 @@ body {
   background-color: rgba(255, 216, 180, 0.75);
 }
 
-h1,
-h2 {
-  align-self: center;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-select {
-  appearance: none;
-  height: 2.5rem;
-  padding: 0.25rem;
-  background: #fff;
-}
-select:focus {
-  outline: none;
-}
-
-input {
-  padding: 0.25rem;
-  height: 1.5rem;
-}
-input:focus {
-  outline: none;
-}
-
-label {
-  margin-top: 1rem;
-}
-
-.submit {
-  align-self: center;
-  margin-top: 1rem;
-}
-
 body {
   font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 0.875rem;
@@ -137,6 +100,12 @@ small {
   color: #683333;
   margin-right: 0.25rem;
 }
+.error-password.valid {
+  color: rgba(52, 71, 53, 0.7);
+}
+.error-password.valid:before {
+  color: rgba(104, 51, 51, 0.7);
+}
 
 .submit {
   color: #fff;
@@ -153,7 +122,6 @@ form {
 }
 
 select {
-  appearance: none;
   height: 2.5rem;
   padding: 0.25rem;
   background: #fff;
@@ -179,9 +147,11 @@ label {
 .submit {
   align-self: center;
   padding: 0.5rem 1rem;
+  margin: 1rem;
   height: auto;
   background: #344735;
   border: none;
+  cursor: pointer;
 }
 
 #error-password {

@@ -42,6 +42,11 @@ label {
   background: $color-primary;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background: rgba($color-primary, 0.75);
+  }
+
 }
 
 #error-password {

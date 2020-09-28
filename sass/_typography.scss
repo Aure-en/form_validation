@@ -24,16 +24,21 @@ small {
       margin-right: .25rem;
     }
 
-    &.valid {
-      color: rgba($color-primary, .7);
-
       &:before {
-        color: rgba($color-secondary, .7);
+        content: "✓";
+        color: rgba($color-secondary, .85);
       }
     }
+
+  &.valid {
+    color: rgba($color-primary, .85);
   }
 }
 
 .submit {
   color: #fff;
+}
+
+#error-submit {
+  text-align: center;
 }
